@@ -35,9 +35,46 @@ require("lualine").setup {
     "nerdtree",
     "toggleterm",
   },
-  sections = {lualine_c = {require('auto-session-library').current_session_name}}
 }
 
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_lualine_bold = true
+
+-- vim.g.startify_session_dir = "~/.config/nvim/sessions"
+vim.g.startify_session_autoload = 1
+vim.g.startify_session_delete_buffers = 1
+vim.g.startify_change_to_vcs_root = 1
+vim.g.startify_fortune_use_unicode = 1
+vim.g.startify_session_persistence = 1
+vim.g.startify_enable_special = 0
+vim.cmd([[
+let g:startify_lists = [
+          \ { 'type': 'sessions',     'header': ['   Sessions']            },
+          \ { 'type': 'bookmarks',       'header': ['   Bookmarks'] },
+          \ { 'type': 'files',  'header': ['   Files']       },
+          \ { 'type': 'dir', 'header': ['   Current Directory '. getcwd()]},
+          \ ]
+]])
+
+vim.cmd([[
+let g:startify_session_before_save = [
+        \ 'silent! :tabdo NERDTreeClose',
+        \ 'silent! :bufdo NERDTreeClose'
+        \ ]
+]])
+
+-- vim.cmd([[
+-- -- let g:startify_custom_header = [
+
+-- --  /$$   /$$                                /$$                        /$$$  
+-- -- | $$$ | $$                               |__/                       |_  $$ 
+-- -- | $$$$| $$  /$$$$$$   /$$$$$$  /$$    /$$ /$$ /$$$$$$/$$$$        /$$ \  $$
+-- -- | $$ $$ $$ /$$__  $$ /$$__  $$|  $$  /$$/| $$| $$_  $$_  $$      |__/  | $$
+-- -- | $$  $$$$| $$$$$$$$| $$  \ $$ \  $$/$$/ | $$| $$ \ $$ \ $$            | $$
+-- -- | $$\  $$$| $$_____/| $$  | $$  \  $$$/  | $$| $$ | $$ | $$       /$$  /$$/
+-- -- | $$ \  $$|  $$$$$$$|  $$$$$$/   \  $/   | $$| $$ | $$ | $$      |__//$$$/ 
+-- -- |__/  \__/ \_______/ \______/     \_/    |__/|__/ |__/ |__/         |___/  
+                                                                           
+-- -- ]
+-- -- ]])
 

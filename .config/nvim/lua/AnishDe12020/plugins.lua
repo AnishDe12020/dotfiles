@@ -42,14 +42,14 @@ return require("packer").startup({
     use 'metakirby5/codi.vim'
     use "akinsho/toggleterm.nvim"
     use "tiagofumo/vim-nerdtree-syntax-highlight"
-    use {
-      'goolord/alpha-nvim',
-      requires = { 'kyazdani42/nvim-web-devicons' },
-      config = function ()
-        require'alpha'.setup(require'alpha.themes.startify'.config)
-      end
-    }
-    use "jistr/vim-nerdtree-tabs"
+    -- use {
+    --   'goolord/alpha-nvim',
+    --   requires = { 'kyazdani42/nvim-web-devicons' },
+    --   config = function ()
+    --     require'alpha'.setup(require'alpha.themes.startify'.config)
+    --   end
+    -- }
+    -- use "jistr/vim-nerdtree-tabs"
 
     -- tpope
     use 'tpope/vim-surround'
@@ -94,21 +94,12 @@ return require("packer").startup({
     use "mattn/emmet-vim"
     use "jiangmiao/auto-pairs"
     use "yuttie/comfortable-motion.vim"
-    use {
-      'rmagatti/auto-session',
-      config = function()
-        require('auto-session').setup {
-        log_level = 'info',
-        auto_session_suppress_dirs = {'~/', '~/Projects'}
-      }
-      end
-   }
+    use "mhinz/vim-startify"
 
     if packerBootstrap then
       require('packer').sync()
     end
   end,
-
   config = {
     display = {
       open_fn = function()
