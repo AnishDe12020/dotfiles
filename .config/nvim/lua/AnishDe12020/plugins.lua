@@ -42,6 +42,7 @@ return require("packer").startup({
     use 'metakirby5/codi.vim'
     use "akinsho/toggleterm.nvim"
     use "tiagofumo/vim-nerdtree-syntax-highlight"
+    use "jistr/vim-nerdtree-tabs"
     -- use {
     --   'goolord/alpha-nvim',
     --   requires = { 'kyazdani42/nvim-web-devicons' },
@@ -83,11 +84,11 @@ return require("packer").startup({
          "coc-html",
          "coc-json",
          "coc-prettier",
-         "coc-tsserver",
-         "coc-tailwindcss"
+         "coc-tsserver"
         }
       end
     }
+    use {"yaegassy/coc-tailwindcss", run = "yarn install --frozen-lockfile && yarn build", branch = "feat/support-v3-and-use-server-pkg"}
     use "wakatime/vim-wakatime"
     use "github/copilot.vim"
     use "ellisonleao/glow.nvim"

@@ -7,3 +7,5 @@ require "AnishDe12020.plugin-config"
 require "AnishDe12020.colorscheme"
 require "AnishDe12020.treesitter"
 require "AnishDe12020.keymaps"
+require "AnishDe12020.autocmd"
+
