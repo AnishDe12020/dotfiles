@@ -51,7 +51,10 @@ nmap("<A-Left>", "<C-w>Left")
 nmap("<A-Right>", "<C-w>Right")
 
 -- FZF
-nmap("<C-p>", ":FZF<CR>")
+-- nmap("<C-p>", ":FZF<CR>")
+
+-- Telescope
+nmap("<C-p>", ":Telescope find_files<CR>")
 
 -- keymap('i', '<C-c>', '<esc>:call copilot#Accept()<cr>i', {noremap = true, silent = true, script = true, nowait = true})
 -- for some reason only viml works

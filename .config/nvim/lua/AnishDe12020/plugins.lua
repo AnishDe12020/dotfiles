@@ -35,6 +35,10 @@ return require("packer").startup({
     }
     use { 'junegunn/fzf', run = function () vim.cmd[[call fzf#install()]] end}
     use 'junegunn/fzf.vim'
+    use {
+      'nvim-telescope/telescope.nvim',
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
     use 'preservim/nerdtree'
     use 'PhilRunninger/nerdtree-visual-selection'
     use 'Xuyuanp/nerdtree-git-plugin'
