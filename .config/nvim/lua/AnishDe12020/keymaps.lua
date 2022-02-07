@@ -17,15 +17,15 @@ nmap('<space>', '')
 vim.g.mapleader = ' '
 
 -- Smooth scroll
-nmap('<C-d>', ':call comfortable_motion#flick(100)<CR>')
-nmap('<C-u>', ':call comfortable_motion#flick(-100)<CR>')
-nmap('<C-f>', ':call comfortable_motion#flick(200)<CR>')
-nmap('<C-b>', ':call comfortable_motion#flick(-200)<CR>')
+-- nmap('<C-d>', ':call comfortable_motion#flick(100)<CR>')
+-- nmap('<C-u>', ':call comfortable_motion#flick(-100)<CR>')
+-- nmap('<C-f>', ':call comfortable_motion#flick(200)<CR>')
+-- nmap('<C-b>', ':call comfortable_motion#flick(-200)<CR>')
 map('<ScrollWheelDown>', ':call comfortable_motion#flick(20)<CR>')
 map('<ScrollWheelUp>', '  :call comfortable_motion#flick(-20)<CR>')
 
 -- NerdTree
-nmap("<C-b>", ":NERDTreeToggle<CR>")
+nmap("<C-S-e>", ":NERDTreeTabsToggle<CR>")
 
 -- Terminal
 tmap("<Esc>", "<C-\\><C-n>")
