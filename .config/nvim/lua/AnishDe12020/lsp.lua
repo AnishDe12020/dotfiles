@@ -33,7 +33,7 @@ local onAttach = function(_, bufnr)
 	buf_set_keymap('n', '<leader>f', '<cmd>EslintFixAll<cr>', opts)
 end
 
-local servers = {'angularls', 'bashls', 'cssls', 'eslint', 'html', 'jsonls', 'tsserver'}
+local servers = {'bashls', 'cssls', 'eslint', 'html', 'jsonls', 'tsserver'}
 
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup {
