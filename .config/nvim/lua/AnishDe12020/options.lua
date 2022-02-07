@@ -32,6 +32,8 @@ set 'showtabline=1'
 set 'errorbells'
 set "clipboard=unnamedplus"
 
+vim.g.mapleader = ' '
+
 vim.api.nvim_exec([[
   let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 ]], true)

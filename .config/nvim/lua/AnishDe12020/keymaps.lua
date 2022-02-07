@@ -2,8 +2,8 @@
 local keymap = vim.api.nvim_set_keymap
 
 local function makeMap(mode)
-	return function(lhs, rhs)
-		keymap(mode, lhs, rhs, {noremap = true, silent = true})
+	return function(lhs, rhs, isnoremap)
+		keymap(mode, lhs, rhs, {noremap = isnoremap or true, silent = true})
 	end
 end
 
@@ -76,12 +76,12 @@ nmap("to", ":tabo<CR>") -- closes all tabs except current
 nmap("tq", ":tabclose<CR>")
 
 -- Coc keymaps
-nmap("<leader>.", "<Plug>(coc-codeaction)")
-nmap("<leader>,", "<Plug>(coc-refactor)")
-nmap("<leader>f", "<Plug>(coc-format)")
-nmap("<leader>]", "<Plug>(coc-definition)")
-nmap("<leader>/", "<Plug>(coc-rename)")
+nmap("<leader>.", ":CocAction<CR>", false)
+nmap("<leader>,", ":call CocActionAsync('refactor')<CR>", false)
+nmap("<leader>f", ":call CocActionAsync('format')<CR>", false)
+nmap("<leader>]", ":call CocActionAsync('jumpDefinition')<CR>", false)
+nmap("<leader>cv", ":call CocActionAsync('rename')<CR>", false)
 
 -- Reload config
-nmap("<leader>cr", ":source $MYVIMRC<CR>")
+nmap("<leader>cr", ":source $MYVIMRC<CR>", false)
 
