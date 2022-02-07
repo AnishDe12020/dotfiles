@@ -62,3 +62,26 @@ vim.cmd[[
 	imap <script><silent><nowait><expr> <Tab> copilot#Accept()
 	map <leader>D :put =strftime('# %a %Ym-%d %H:%M:%S%z')<CR>
 ]]
+
+-- Split
+nmap("vs", ":vs<CR>")
+nmap("sp", ":sp<CR>")
+
+-- Tabs
+nmap("tn", ":tabnew<CR>")
+nmap("tk", ":tabnext<CR>")
+nmap("tj", ":tabprevious<CR>")
+nmap("tl", ":tablast<CR>")
+nmap("to", ":tabo<CR>") -- closes all tabs except current
+nmap("tq", ":tabclose<CR>")
+
+-- Coc keymaps
+nmap("<leader>.", "<Plug>(coc-codeaction)")
+nmap("<leader>,", "<Plug>(coc-refactor)")
+nmap("<leader>f", "<Plug>(coc-format)")
+nmap("<leader>]", "<Plug>(coc-definition)")
+nmap("<leader>/", "<Plug>(coc-rename)")
+
+-- Reload config
+nmap("<leader>cr", ":source $MYVIMRC<CR>")
+
