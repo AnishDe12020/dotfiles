@@ -104,6 +104,7 @@ return require("packer").startup({
     use "jiangmiao/auto-pairs"
     use "yuttie/comfortable-motion.vim"
     use "mhinz/vim-startify"
+    use "dense-analysis/ale"
 
     if packerBootstrap then
       require('packer').sync()
