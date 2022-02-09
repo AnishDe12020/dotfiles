@@ -76,11 +76,11 @@ nmap("to", ":tabo<CR>") -- closes all tabs except current
 nmap("tq", ":tabclose<CR>")
 
 -- Coc keymaps
-nmap("<leader>.", ":CocAction<CR>", false)
-nmap("<leader>,", ":call CocActionAsync('refactor')<CR>", false)
-nmap("<leader>f", ":call CocActionAsync('format')<CR>", false)
-nmap("<leader>]", ":call CocActionAsync('jumpDefinition')<CR>", false)
-nmap("<leader>cv", ":call CocActionAsync('rename')<CR>", false)
+-- nmap("<leader>.", ":CocAction<CR>", false)
+-- nmap("<leader>,", ":call CocActionAsync('refactor')<CR>", false)
+-- nmap("<leader>f", ":call CocActionAsync('format')<CR>", false)
+-- nmap("<leader>]", ":call CocActionAsync('jumpDefinition')<CR>", false)
+-- nmap("<leader>cv", ":call CocActionAsync('rename')<CR>", false)
 
 -- Reload config
 nmap("<leader>cr", ":source $MYVIMRC<CR>", false)

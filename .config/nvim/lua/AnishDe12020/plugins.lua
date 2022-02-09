@@ -53,8 +53,7 @@ return require("packer").startup({
     --   config = function ()
     --     require'alpha'.setup(require'alpha.themes.startify'.config)
     --   end
-    -- }
-    use "jistr/vim-nerdtree-tabs"
+    -- } 
 
     -- tpope
     use 'tpope/vim-surround'
@@ -68,11 +67,16 @@ return require("packer").startup({
 
     -- lsp
     use 'neovim/nvim-lspconfig'
+    use 'williamboman/nvim-lsp-installer'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+    -- use 'hrsh7th/nvim-treesitter-langserver'
+    -- use {'ms-jpq/coq_nvim', branch = 'coq'}
+		-- use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+		-- use {'ms-jpq/coq.thirdparty', branch = '3p'}
 
     -- luasnip
     use 'L3MON4D3/LuaSnip'
@@ -80,19 +84,18 @@ return require("packer").startup({
     use 'saadparwaiz1/cmp_luasnip'
 
     -- misc
-    use {'neoclide/coc.nvim', branch = 'release',
-      config = function()
-        vim.g.coc_global_extensions = {
-         "coc-emmet",
-         "coc-css",
-         "coc-html",
-         "coc-json",
-         "coc-prettier",
-         "coc-tsserver"
-        }
-      end
-    }
-    use {"yaegassy/coc-tailwindcss", run = "yarn install --frozen-lockfile && yarn build", branch = "feat/support-v3-and-use-server-pkg"}
+
+    --     vim.g.coc_global_extensions = {
+    --      "coc-emmet",
+    --      "coc-css",
+    --      "coc-html",
+    --      "coc-json",
+    --      "coc-prettier",
+    --      "coc-tsserver"
+    --     }
+    --   end
+    -- }
+    -- use {"yaegassy/coc-tailwindcss", run = "yarn install --frozen-lockfile && yarn build", branch = "feat/support-v3-and-use-server-pkg"}
     use "wakatime/vim-wakatime"
     use "github/copilot.vim"
     use "ellisonleao/glow.nvim"
