@@ -32,7 +32,7 @@ lspInstaller.on_server_ready(
 	end
 )
 
-local servers = {'bashls', 'cssls', 'eslint', 'html', 'jsonls', 'tsserver'}
+local servers = {'bashls', 'cssls', 'eslint', 'html', 'jsonls', 'tsserver', 'tailwindcss'}
 
 
 -- 		on_attach = onAttach,
