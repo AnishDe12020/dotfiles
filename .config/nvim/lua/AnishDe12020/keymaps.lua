@@ -25,7 +25,7 @@ map('<ScrollWheelDown>', ':call comfortable_motion#flick(20)<CR>')
 map('<ScrollWheelUp>', '  :call comfortable_motion#flick(-20)<CR>')
 
 -- NerdTree
-nmap("<C-S-e>", ":NERDTreeTabsToggle<CR>")
+nmap("<leader>nt", ":NERDTreeTabsToggle<CR>")
 
 -- Terminal
 tmap("<Esc>", "<C-\\><C-n>")

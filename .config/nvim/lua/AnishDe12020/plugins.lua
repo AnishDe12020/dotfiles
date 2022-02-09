@@ -54,7 +54,7 @@ return require("packer").startup({
     --     require'alpha'.setup(require'alpha.themes.startify'.config)
     --   end
     -- }
-    -- use "jistr/vim-nerdtree-tabs"
+    use "jistr/vim-nerdtree-tabs"
 
     -- tpope
     use 'tpope/vim-surround'
