@@ -70,12 +70,12 @@ lspInstaller.on_server_ready(function(server)
 
 	local opts = {
 		on_attach = on_attach,
-    capabilities = capabilities,
+		capabilities = capabilities,
 	}
 
-  if server.name == "sumneko_lua" then
-    opts = vim.tbl_deep_extend("force", sumneko_lua_opts, opts)
-  end
+	if server.name == "sumneko_lua" then
+		opts = vim.tbl_deep_extend("force", sumneko_lua_opts, opts)
+	end
 
-  server:setup(opts)
+	server:setup(opts)
 end)
