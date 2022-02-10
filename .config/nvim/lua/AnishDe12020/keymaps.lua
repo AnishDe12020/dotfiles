@@ -1,28 +1,27 @@
-
 local keymap = vim.api.nvim_set_keymap
 
 local function makeMap(mode)
 	return function(lhs, rhs, isnoremap)
-		keymap(mode, lhs, rhs, {noremap = isnoremap or true, silent = true})
+		keymap(mode, lhs, rhs, { noremap = isnoremap or true, silent = true })
 	end
 end
 
-local imap = makeMap 'i'
-local nmap = makeMap 'n'
-local tmap = makeMap 't'
-local xmap = makeMap 'x'
-local map = makeMap ''
+local imap = makeMap("i")
+local nmap = makeMap("n")
+local tmap = makeMap("t")
+local xmap = makeMap("x")
+local map = makeMap("")
 
-nmap('<space>', '')
-vim.g.mapleader = ' '
+nmap("<space>", "")
+vim.g.mapleader = " "
 
 -- Smooth scroll
 -- nmap('<C-d>', ':call comfortable_motion#flick(100)<CR>')
 -- nmap('<C-u>', ':call comfortable_motion#flick(-100)<CR>')
 -- nmap('<C-f>', ':call comfortable_motion#flick(200)<CR>')
 -- nmap('<C-b>', ':call comfortable_motion#flick(-200)<CR>')
-map('<ScrollWheelDown>', ':call comfortable_motion#flick(20)<CR>')
-map('<ScrollWheelUp>', ':call comfortable_motion#flick(-20)<CR>')
+map("<ScrollWheelDown>", ":call comfortable_motion#flick(20)<CR>")
+map("<ScrollWheelUp>", ":call comfortable_motion#flick(-20)<CR>")
 
 -- NerdTree
 nmap("<leader>nt", ":NERDTreeTabsToggle<CR>")
@@ -58,10 +57,10 @@ nmap("<C-p>", ":Telescope find_files<CR>")
 
 -- keymap('i', '<C-c>', '<esc>:call copilot#Accept()<cr>i', {noremap = true, silent = true, script = true, nowait = true})
 -- for some reason only viml works
-vim.cmd[[
+vim.cmd([[
 	imap <script><silent><nowait><expr> <Tab> copilot#Accept()
 	map <leader>D :put =strftime('# %a %Ym-%d %H:%M:%S%z')<CR>
-]]
+]])
 
 -- Split
 nmap("vs", ":vs<CR>")
