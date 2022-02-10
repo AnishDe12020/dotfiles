@@ -22,7 +22,7 @@ vim.g.mapleader = ' '
 -- nmap('<C-f>', ':call comfortable_motion#flick(200)<CR>')
 -- nmap('<C-b>', ':call comfortable_motion#flick(-200)<CR>')
 map('<ScrollWheelDown>', ':call comfortable_motion#flick(20)<CR>')
-map('<ScrollWheelUp>', '  :call comfortable_motion#flick(-20)<CR>')
+map('<ScrollWheelUp>', ':call comfortable_motion#flick(-20)<CR>')
 
 -- NerdTree
 nmap("<leader>nt", ":NERDTreeTabsToggle<CR>")
@@ -85,3 +85,5 @@ nmap("tq", ":tabclose<CR>")
 -- Reload config
 nmap("<leader>cr", ":source $MYVIMRC<CR>", false)
 
+-- Null LS
+nmap("<leader>f", ":Format<CR>")

@@ -74,6 +74,7 @@ return require("packer").startup({
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+    use "jose-elias-alvarez/null-ls.nvim"
     -- use {'ms-jpq/coq_nvim', branch = 'coq'}
 		-- use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
 		-- use {'ms-jpq/coq.thirdparty', branch = '3p'}
@@ -104,7 +105,6 @@ return require("packer").startup({
     use "jiangmiao/auto-pairs"
     use "yuttie/comfortable-motion.vim"
     use "mhinz/vim-startify"
-    use "dense-analysis/ale"
 
     if packerBootstrap then
       require('packer').sync()
