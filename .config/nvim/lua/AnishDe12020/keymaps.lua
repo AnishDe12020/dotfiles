@@ -10,6 +10,7 @@ local imap = makeMap("i")
 local nmap = makeMap("n")
 local tmap = makeMap("t")
 local xmap = makeMap("x")
+local vmap = makeMap("v")
 local map = makeMap("")
 
 nmap("<space>", "")
@@ -86,3 +87,16 @@ nmap("<leader>cr", ":source $MYVIMRC<CR>", false)
 
 -- Null LS
 nmap("<leader>f", ":Format<CR>")
+
+-- Move text
+nmap("<A-j>", ":m .+1<CR>")
+nmap("<A-k>", ":m .-2<CR>")
+
+vmap("<A-j>", ":m .+1<CR>")
+vmap("<A-k>", ":m .-2<CR>")
+
+xmap("J", ">+1gv-gv")
+xmap("K", "<-2gv-gv")
+-- xmap("<A-j>", ">+1<CR>gv-gv")
+-- xmap("<A-k>", "<-2<CR>gv-gv")
+
