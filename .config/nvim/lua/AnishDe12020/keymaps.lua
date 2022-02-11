@@ -58,7 +58,7 @@ nmap("<C-p>", ":Telescope find_files<CR>")
 -- keymap('i', '<C-c>', '<esc>:call copilot#Accept()<cr>i', {noremap = true, silent = true, script = true, nowait = true})
 -- for some reason only viml works
 vim.cmd([[
-	imap <script><silent><nowait><expr> <Tab> copilot#Accept()
+	imap <script><silent><nowait><expr> <C-c> copilot#Accept()
 	map <leader>D :put =strftime('# %a %Ym-%d %H:%M:%S%z')<CR>
 ]])
 
