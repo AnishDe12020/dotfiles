@@ -25,7 +25,7 @@ map("<ScrollWheelDown>", ":call comfortable_motion#flick(20)<CR>")
 map("<ScrollWheelUp>", ":call comfortable_motion#flick(-20)<CR>")
 
 -- NerdTree
-nmap("<leader>nt", ":NERDTreeTabsToggle<CR>")
+-- nmap("<leader>nt", ":NERDTreeTabsToggle<CR>")
 
 -- Terminal
 tmap("<Esc>", "<C-\\><C-n>")
@@ -95,8 +95,11 @@ nmap("<A-k>", ":m .-2<CR>")
 vmap("<A-j>", ":m .+1<CR>")
 vmap("<A-k>", ":m .-2<CR>")
 
-xmap("J", ">+1gv-gv")
-xmap("K", "<-2gv-gv")
--- xmap("<A-j>", ">+1<CR>gv-gv")
--- xmap("<A-k>", "<-2<CR>gv-gv")
+xmap("J", ":m >+1<CR>gv-gv")
+xmap("K", ":m :m <-2<CR>gv-gv")
+xmap("<A-j>", ":m '>+1<CR>gv-gv")
+xmap("<A-k>", ":m '<-2<CR>gv-gv")
+
+-- Nvim Tree
+nmap("<leader>nt", ":NvimTreeToggle<CR>")
 

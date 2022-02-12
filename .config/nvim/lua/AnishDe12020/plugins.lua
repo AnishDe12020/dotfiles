@@ -56,14 +56,14 @@ return require("packer").startup({
 			"nvim-telescope/telescope.nvim",
 			requires = { { "nvim-lua/plenary.nvim" } },
 		})
-		use("preservim/nerdtree")
-		use("PhilRunninger/nerdtree-visual-selection")
-		use("Xuyuanp/nerdtree-git-plugin")
+		-- use("preservim/nerdtree")
+		-- use("PhilRunninger/nerdtree-visual-selection")
+		-- use("Xuyuanp/nerdtree-git-plugin")
 		use("folke/trouble.nvim")
 		use("metakirby5/codi.vim")
 		use("akinsho/toggleterm.nvim")
-		use("tiagofumo/vim-nerdtree-syntax-highlight")
-		use("jistr/vim-nerdtree-tabs")
+		-- use("tiagofumo/vim-nerdtree-syntax-highlight")
+		-- use("jistr/vim-nerdtree-tabs")
 		-- use {
 		--   'goolord/alpha-nvim',
 		--   requires = { 'kyazdani42/nvim-web-devicons' },
@@ -72,6 +72,8 @@ return require("packer").startup({
 		--   end
 		-- }
 		use("airblade/vim-gitgutter")
+    use "kyazdani42/nvim-tree.lua"
+
 
 		-- tpope
 		use("tpope/vim-surround")

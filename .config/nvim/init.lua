@@ -10,3 +10,5 @@ require("AnishDe12020.treesitter")
 require("AnishDe12020.keymaps")
 require("AnishDe12020.autocmd")
 require("AnishDe12020.null-ls")
+require("AnishDe12020.nvim-tree")
+
