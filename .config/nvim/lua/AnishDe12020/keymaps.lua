@@ -104,3 +104,6 @@ xmap("<A-k>", ":m '<-2<CR>gv-gv")
 -- Nvim Tree
 nmap("<leader>nt", ":NvimTreeToggle<CR>")
 
+-- Buffers
+nmap("<S-h>", ":bprevious<CR>")
+nmap("<S-l>", ":bnext<CR>")

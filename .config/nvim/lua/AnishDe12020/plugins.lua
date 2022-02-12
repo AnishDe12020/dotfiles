@@ -21,6 +21,10 @@ return require("packer").startup({
 
 		-- theme
 		use("folke/tokyonight.nvim")
+    use({
+	   "catppuccin/nvim",
+	   as = "catppuccin"
+    })
 
 		-- treesitter
 		use({
