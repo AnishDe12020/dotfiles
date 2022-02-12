@@ -55,6 +55,7 @@ nmap("<A-Right>", "<C-w>Right")
 
 -- Telescope
 nmap("<C-p>", ":Telescope find_files<CR>")
+nmap("<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<CR>")
 
 -- keymap('i', '<C-c>', '<esc>:call copilot#Accept()<cr>i', {noremap = true, silent = true, script = true, nowait = true})
 -- for some reason only viml works
