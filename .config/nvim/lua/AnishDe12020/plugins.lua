@@ -73,6 +73,8 @@ return require("packer").startup({
 		-- }
 		use("airblade/vim-gitgutter")
     use "kyazdani42/nvim-tree.lua"
+    use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+
 
 
 		-- tpope
@@ -124,6 +126,8 @@ return require("packer").startup({
 		use("jiangmiao/auto-pairs")
 		use("yuttie/comfortable-motion.vim")
 		use("mhinz/vim-startify")
+    use "moll/vim-bbye"
+
 
 		if packerBootstrap then
 			require("packer").sync()
