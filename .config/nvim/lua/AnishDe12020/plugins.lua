@@ -21,11 +21,11 @@ return require("packer").startup({
 
 		-- theme
 		use("folke/tokyonight.nvim")
-    use({
-	   "catppuccin/nvim",
-	   as = "catppuccin"
-    })
-    use "arcticicestudio/nord-vim"
+		use({
+			"catppuccin/nvim",
+			as = "catppuccin",
+		})
+		use("arcticicestudio/nord-vim")
 
 		-- treesitter
 		use({
@@ -76,12 +76,15 @@ return require("packer").startup({
 		--     require'alpha'.setup(require'alpha.themes.startify'.config)
 		--   end
 		-- }
-		use("airblade/vim-gitgutter")
-    use "kyazdani42/nvim-tree.lua"
-    use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
-
-
-
+		use("kyazdani42/nvim-tree.lua")
+		use({ "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" })
+		use({
+			"lewis6991/gitsigns.nvim",
+			requires = {
+				"nvim-lua/plenary.nvim",
+			},
+			-- tag = 'release' -- To use the latest release
+		})
 		-- tpope
 		use("tpope/vim-surround")
 		use("tpope/vim-commentary")
@@ -131,8 +134,7 @@ return require("packer").startup({
 		use("jiangmiao/auto-pairs")
 		use("yuttie/comfortable-motion.vim")
 		use("mhinz/vim-startify")
-    use "moll/vim-bbye"
-
+		use("moll/vim-bbye")
 
 		if packerBootstrap then
 			require("packer").sync()
