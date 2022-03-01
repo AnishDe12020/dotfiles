@@ -25,6 +25,7 @@ return require("packer").startup({
 	   "catppuccin/nvim",
 	   as = "catppuccin"
     })
+    use "arcticicestudio/nord-vim"
 
 		-- treesitter
 		use({

@@ -81,6 +81,7 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+  zsh-vi-mode
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -135,4 +136,7 @@ export GOPATH=$(go env GOPATH)
 
 source $(brew --prefix)/share/zsh/site-functions/_todoist_fzf
 
+ZVM_INIT_MODE=sourcing
+
+alias nvclean=XDG_CONFIG_HOME=~/.nvclean/nvclean-config nvim
 
