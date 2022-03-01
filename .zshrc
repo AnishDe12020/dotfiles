@@ -140,3 +140,9 @@ ZVM_INIT_MODE=sourcing
 
 alias nvclean=XDG_CONFIG_HOME=~/.nvclean/nvclean-config nvim
 
+
+[[ -s "/home/anish/.gvm/scripts/gvm" ]] && source "/home/anish/.gvm/scripts/gvm"
+
+mkcd() {
+  mkdir "$1"; cd "$1"
+}
