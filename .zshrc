@@ -142,7 +142,9 @@ alias nvclean=XDG_CONFIG_HOME=~/.nvclean/nvclean-config nvim
 
 
 [[ -s "/home/anish/.gvm/scripts/gvm" ]] && source "/home/anish/.gvm/scripts/gvm"
+export PATH=$PATH:$(go env GOPATH)/bin
 
 mkcd() {
   mkdir "$1"; cd "$1"
 }
+
