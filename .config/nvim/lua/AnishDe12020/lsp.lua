@@ -12,10 +12,15 @@ local on_attach = function(client, bufnr)
 		client.resolved_capabilities.document_range_formatting = false
 	end
 
-  if client.name == "rust_analyzer" then
-    client.resolved_capabilities.document_formatting = false
-    client.resolved_capabilities.document_range_formatting = false
-  end
+	if client.name == "rust_analyzer" then
+		client.resolved_capabilities.document_formatting = false
+		client.resolved_capabilities.document_range_formatting = false
+	end
+
+	if client.name == "gopls" then
+		client.resolved_capabilities.document_formatting = false
+		client.resolved_capabilities.document_range_formatting = false
+	end
 
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
 
