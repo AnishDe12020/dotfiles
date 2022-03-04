@@ -13,4 +13,4 @@ require("AnishDe12020.null-ls")
 require("AnishDe12020.nvim-tree")
 require("AnishDe12020.telescope")
 require("AnishDe12020.bufferline")
-
+require("AnishDe12020.gitsigns")
