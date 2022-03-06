@@ -31,6 +31,7 @@ set("smarttab")
 set("showtabline=1")
 set("errorbells")
 set("clipboard=unnamedplus")
+set("noswapfile")
 
 vim.g.mapleader = " "
 
