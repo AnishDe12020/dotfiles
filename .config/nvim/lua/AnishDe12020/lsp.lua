@@ -70,6 +70,19 @@ local sumneko_lua_opts = {
 	},
 }
 
+local emmet_ls_opts = {
+	on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = {
+		"html",
+		"css",
+		"javascriptreact",
+		"typescriptreact",
+		"svelte",
+		"vue",
+	},
+}
+
 lspInstaller.on_server_ready(function(server)
 	local keymap_opts = { noremap = true, silent = true }
 
@@ -86,6 +99,10 @@ lspInstaller.on_server_ready(function(server)
 	if server.name == "sumneko_lua" then
 		opts = vim.tbl_deep_extend("force", sumneko_lua_opts, opts)
 	end
+
+	-- if server.name == "emmet_ls" then
+	-- 	opts = vim.tbl_deep_extend("force", emmet_ls_opts, opts)
+	-- end
 
 	server:setup(opts)
 end)
