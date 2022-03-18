@@ -148,3 +148,10 @@ mkcd() {
   mkdir "$1"; cd "$1"
 }
 
+
+# bun completions
+[ -s "/home/anish/.bun/_bun" ] && source "/home/anish/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/home/anish/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
