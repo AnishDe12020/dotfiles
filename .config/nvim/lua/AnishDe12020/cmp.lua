@@ -57,7 +57,7 @@ cmp.setup({
 		["<CR>"] = cmp.mapping.confirm({ select = true }),
 		-- ["<Down>"] = cmp.mapping.select_next_item(),
 		-- ["<Up>"] = cmp.mapping.select_prev_item(),
-		['<Tab>'] = cmp.mapping(function(fallback)
+		["<Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
 			elseif luasnip.expandable() then
@@ -70,10 +70,10 @@ cmp.setup({
 				fallback()
 			end
 		end, {
-		'i',
-		's',
+			"i",
+			"s",
 		}),
-		['<S-Tab>'] = cmp.mapping(function(fallback)
+		["<S-Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_prev_item()
 			elseif luasnip.jumpable(-1) then
@@ -82,8 +82,8 @@ cmp.setup({
 				fallback()
 			end
 		end, {
-			'i',
-			's',
+			"i",
+			"s",
 		}),
 	},
 	formatting = {

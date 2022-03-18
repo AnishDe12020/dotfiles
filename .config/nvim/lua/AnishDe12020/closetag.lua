@@ -1,0 +1,5 @@
+-- vim.g.closetag_filenames = "*.html,*.jsx,*.tsx,*.vue,*.xhml,*.xml,*.svelte"
+-- vim.g.closetag_regions = {
+--   "typescript.tsx"= "jsxRegion,tsxRegion",
+--   "javascript.jsx"= "jsxRegion,tsxRegion",
+-- }

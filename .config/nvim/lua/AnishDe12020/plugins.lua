@@ -113,6 +113,7 @@ return require("packer").startup({
 		use("L3MON4D3/LuaSnip")
 		use("rafamadriz/friendly-snippets")
 		use("saadparwaiz1/cmp_luasnip")
+		use("avneesh0612/react-nextjs-snippets")
 
 		-- misc
 
@@ -135,6 +136,8 @@ return require("packer").startup({
 		use("yuttie/comfortable-motion.vim")
 		use("mhinz/vim-startify")
 		use("moll/vim-bbye")
+		use("alvan/vim-closetag")
+		use({ "turbio/bracey.vim", run = "npm install --prefix server" })
 
 		if packerBootstrap then
 			require("packer").sync()
