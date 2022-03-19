@@ -1,5 +1,6 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
+local compare = require("cmp.config.compare")
 
 local check_backspace = function()
 	local col = vim.fn.col(".") - 1
@@ -95,6 +96,7 @@ cmp.setup({
 				luasnip = "[Snippet]",
 				buffer = "[Buffer]",
 				path = "[Path]",
+				cmp_tabnine = "[TabNine]",
 			})[entry.source.name]
 			return vim_item
 		end,
@@ -102,6 +104,7 @@ cmp.setup({
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
+		{ name = "cmp_tabnine" },
 	}, {
 		{ name = "buffer" },
 	}),
@@ -115,6 +118,20 @@ cmp.setup({
 	experimental = {
 		ghost_text = false,
 		native_menu = false,
+	},
+	sorting = {
+		priority_weight = 2,
+		comparators = {
+			require("cmp_tabnine.compare"),
+			compare.offset,
+			compare.exact,
+			compare.score,
+			compare.recently_used,
+			compare.kind,
+			compare.sort_text,
+			compare.length,
+			compare.order,
+		},
 	},
 })
 

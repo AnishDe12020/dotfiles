@@ -138,6 +138,7 @@ return require("packer").startup({
 		use("moll/vim-bbye")
 		use("alvan/vim-closetag")
 		use({ "turbio/bracey.vim", run = "npm install --prefix server" })
+		use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
 
 		if packerBootstrap then
 			require("packer").sync()
