@@ -82,6 +82,7 @@ plugins=(
 	zsh-autosuggestions
 	zsh-syntax-highlighting
   zsh-vi-mode
+  thefuck
 	)
 
 source $ZSH/oh-my-zsh.sh
