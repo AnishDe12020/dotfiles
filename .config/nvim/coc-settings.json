@@ -29,5 +29,6 @@
   },
   "suggest.autoTrigger": "none",
   "suggest.timeout": 1,
-  "diagnostic.enable": false
+  "diagnostic.enable": false,
+  "react-refactor.produceClass": false
 }
