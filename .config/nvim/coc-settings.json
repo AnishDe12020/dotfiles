@@ -1,19 +1,4 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "json",
-    "javascriptreact",
-    "typescript.tsx"
-  ],
-  "eslint.filetypes": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "javascriptreact",
-    "typescript.tsx"
-  ],
   "coc.preferences.diagnostic.virtualText": true,
   "suggest.completionItemKindLabels": {
     "method": "  ",
@@ -41,5 +26,8 @@
     "constructor": "  ",
     "value": "  ",
     "enumMember": "  "
-  }
+  },
+  "suggest.autoTrigger": "none",
+  "suggest.timeout": 1,
+  "diagnostic.enable": false
 }

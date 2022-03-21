@@ -109,6 +109,9 @@ return require("packer").startup({
 		-- use {'ms-jpq/coq.thirdparty', branch = '3p'}
 		-- use "lithammer/nvim-diagnosticls"
 
+		-- coc
+		use({ "neoclide/coc.nvim", branch = "release" })
+
 		-- luasnip
 		use("L3MON4D3/LuaSnip")
 		use("rafamadriz/friendly-snippets")
