@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt update && sudo apt upgrade -y
+sudo nala update && sudo nala upgrade -y
 flatpak update
 brew upgrade
 npm update -g
