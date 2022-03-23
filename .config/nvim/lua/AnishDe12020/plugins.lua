@@ -142,6 +142,14 @@ return require("packer").startup({
 		use("alvan/vim-closetag")
 		use({ "turbio/bracey.vim", run = "npm install --prefix server" })
 		use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
+		use({
+			"phaazon/hop.nvim",
+			branch = "v1", -- optional but strongly recommended
+			config = function()
+				-- you can configure Hop the way you like here; see :h hop-config
+				require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+			end,
+		})
 
 		if packerBootstrap then
 			require("packer").sync()
