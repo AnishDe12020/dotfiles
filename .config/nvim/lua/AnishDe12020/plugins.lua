@@ -117,6 +117,7 @@ return require("packer").startup({
 		use("rafamadriz/friendly-snippets")
 		use("saadparwaiz1/cmp_luasnip")
 		use("avneesh0612/react-nextjs-snippets")
+		use("avneesh0612/thirdsnips")
 
 		-- misc
 
