@@ -156,3 +156,8 @@ mkcd() {
 # Bun
 export BUN_INSTALL="/home/anish/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# McFly
+eval "$(mcfly init zsh)"
+export MCFLY_KEY_SCHEME=vim
+export MCFLY_FUZZY=2
