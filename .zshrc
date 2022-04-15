@@ -83,6 +83,10 @@ plugins=(
 	zsh-syntax-highlighting
   zsh-vi-mode
   thefuck
+  npm
+  nvm
+  golang
+  zsh-interactive-cd
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -125,8 +129,8 @@ alias cdw="../../mnt/w/"
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/home/anish/.deta/bin:$PATH"
