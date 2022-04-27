@@ -32,6 +32,7 @@ set("showtabline=1")
 set("errorbells")
 set("clipboard=unnamedplus")
 set("noswapfile")
+set("laststatus=3")
 
 vim.g.mapleader = " "
 
@@ -41,3 +42,5 @@ vim.api.nvim_exec(
 ]],
 	true
 )
+
+vim.api.nvim_exec([[let laststatus=3]], true)

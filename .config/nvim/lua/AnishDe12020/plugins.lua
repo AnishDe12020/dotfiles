@@ -143,6 +143,7 @@ return require("packer").startup({
 		use("alvan/vim-closetag")
 		use({ "turbio/bracey.vim", run = "npm install --prefix server" })
 		use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
+		use("KabbAmine/vCoolor.vim")
 		use({
 			"phaazon/hop.nvim",
 			branch = "v1", -- optional but strongly recommended
