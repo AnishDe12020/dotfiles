@@ -9,4 +9,6 @@ au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
 " autocmd VimEnter * NERDTree
 
+autocmd BufRead,BufEnter *.astro set filetype=astro
+
 ]])
