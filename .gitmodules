@@ -1,3 +1,6 @@
 [submodule ".config/kitty/kitty_search"]
 	path = .config/kitty/kitty_search
 	url = https://github.com/trygveaa/kitty-kitten-search
+[submodule "/home/anish/.config/nvim"]
+	path = /home/anish/.config/nvim
+	url = https://github.com/NvChad/NvChad
