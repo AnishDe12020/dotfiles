@@ -1,0 +1,29 @@
+[gcloud]
+disabled = true
+
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[sudo]
+disabled = false
+
+[nodejs]
+format = "using [$symbol$version]($style) "
+style = "bold green"
+symbol = "🐢 "
+
+[memory_usage]
+format = "$symbol[${ram}]($style) "
+threshold = 70
+style = "bold dimmed white"
+disabled = false
+symbol = "💿 "
+
+[directory]
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+symbol = "🍣 "
+style = "bold yellow"
+
