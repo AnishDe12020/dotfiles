@@ -1,3 +1,6 @@
 [submodule ".config/kitty/kitty_search"]
 	path = .config/kitty/kitty_search
 	url = https://github.com/trygveaa/kitty-kitten-search
+[submodule ".config/kitty/kitty_themes"]
+	path = .config/kitty/kitty_themes
+	url = https://github.com/dexpota/kitty-themes
