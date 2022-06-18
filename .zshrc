@@ -124,7 +124,7 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 
-alias ls="colorls --sd -A"
+alias ls="exa --icons --color=always"
 alias cdc="../../mnt/d/Coding/"
 alias cdd="../../mnt/sda4/"
 alias cde="../../mnt/sda2/"
