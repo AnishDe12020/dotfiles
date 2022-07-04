@@ -137,6 +137,8 @@ alias cdw="../../mnt/w/"
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+alias git=hub
+alias lg=lazygit
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/home/anish/.deta/bin:$PATH"
