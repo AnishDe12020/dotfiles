@@ -162,6 +162,14 @@ mkcd() {
   mkdir "$1"; cd "$1"
 }
 
+# bew completions
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
 
 # bun completions
 [ -s "/home/anish/.bun/_bun" ] && source "/home/anish/.bun/_bun"
