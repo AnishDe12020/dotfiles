@@ -146,6 +146,8 @@ export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 export FLYCTL_INSTALL="/home/anish/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export GOPATH=$(go env GOPATH)
+export PATH="/home/anish/.yarn/bin:$PATH"
+export PATH="/home/anish/.local/bin:$PATH"
 
 source $(brew --prefix)/share/zsh/site-functions/_todoist_fzf
 
