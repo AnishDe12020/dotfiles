@@ -54,3 +54,7 @@ export GLFW_IM_MODULE=ibus
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/profile.post.bash" ]] && . "$HOME/.fig/shell/profile.post.bash"
 
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/anish/.local/share/JetBrains/Toolbox/scripts"
