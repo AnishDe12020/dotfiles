@@ -149,8 +149,6 @@ export GOPATH=$(go env GOPATH)
 export PATH="/home/anish/.yarn/bin:$PATH"
 export PATH="/home/anish/.local/bin:$PATH"
 
-source $(brew --prefix)/share/zsh/site-functions/_todoist_fzf
-
 ZVM_INIT_MODE=sourcing
 
 alias nvclean=XDG_CONFIG_HOME=~/.nvclean/nvclean-config nvim
@@ -180,10 +178,6 @@ fi
 export BUN_INSTALL="/home/anish/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# McFly
-eval "$(mcfly init zsh)"
-export MCFLY_KEY_SCHEME=vim
-export MCFLY_FUZZY=2
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -194,4 +188,3 @@ eval "$(zoxide init zsh)"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
-
