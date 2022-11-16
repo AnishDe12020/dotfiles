@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/profile.pre.bash" ]] && . "$HOME/.fig/shell/profile.pre.bash"
+[[ -f "$HOME/.fig/shell/profile.pre.bash" ]] && builtin source "$HOME/.fig/shell/profile.pre.bash"
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
@@ -28,7 +28,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 . "$HOME/.cargo/env"
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 # add Android SDK platform tools to path
 if [ -d "$HOME/platform-tools" ] ; then
@@ -40,22 +39,5 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-nvm use node
-
-export PATH="/home/anish/.local/share/solana/install/active_release/bin:$PATH"
-
-export PATH=$PATH:/usr/local/go/bin
-
-export GLFW_IM_MODULE=ibus
-
-
-
-# Added by Toolbox App
-export PATH="$PATH:/home/anish/.local/share/JetBrains/Toolbox/scripts"
-
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/profile.post.bash" ]] && . "$HOME/.fig/shell/profile.post.bash"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+[[ -f "$HOME/.fig/shell/profile.post.bash" ]] && builtin source "$HOME/.fig/shell/profile.post.bash"
